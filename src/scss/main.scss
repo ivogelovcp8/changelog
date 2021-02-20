@@ -1,0 +1,61 @@
+@import "variables";
+@import "fonts";
+
+body
+{
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+svg
+{
+  fill: currentColor;
+}
+
+option
+{
+  font-weight: inherit;
+}
+
+.page_width
+{
+  max-width: $limited-width;
+}
+
+.icon
+{
+  height: 1rem;
+}
+
+.link,
+.links a
+{
+  color: $link-color;
+
+  &:hover
+  {
+    color: $link-hover;
+  }
+
+  &.under:hover
+  {
+    text-decoration: underline;
+  }
+}
+
+main
+{
+  background-color: $content-bg;
+
+  h1,
+  h2
+  {
+    color: $menu-color;
+  }
+}
+
+.hide
+{
+  display: none;
+}

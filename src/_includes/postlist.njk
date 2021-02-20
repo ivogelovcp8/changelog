@@ -1,0 +1,9 @@
+{% extends "main.njk" %}
+{% block content %}
+  <main class="page_width mx-auto content px-8 py-6">
+    {% for post in collections.posts %}
+    <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+    <p>{{ post.data.description }}</p>
+    {% endfor %}
+  </main>
+{% endblock %}

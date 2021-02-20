@@ -1,0 +1,35 @@
+{
+  "name": "CP8-changelog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "List of changes during the development of CP8 for NameISP AB",
+  "author": "IVO GELOV",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production npx eleventy",
+    "dev": "npx eleventy --serve"
+  },
+  "browserslist": [
+    ">3%"
+  ],
+  "engines": {
+    "node": ">= 12.11.0",
+    "npm": ">= 6.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^4.1.10",
+    "html-minifier": "^4.0.0",
+    "htmlparser2": "^3.10.1",
+    "postcss": "^8.2.1",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-hexrgba": "^2.0.1",
+    "postcss-nested": "^5.0.3",
+    "postcss-scss": "^3.0.4",
+    "rimraf": "^3.0.2",
+    "svgo": "^1.3.2",
+    "tailwindcss": "^2.0.2",
+    "terser": "^5.5.1"
+  }
+}

@@ -1,0 +1,32 @@
+<html lang="{{ lang }}">
+<head>
+  <title>{{ title }}</title>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+  <link rel="icon" type="image/png" href="/assets/icon/favicon.png?v={% version %}">
+  <link rel="stylesheet" href="/assets/css/tailwind.css?v={% version %}"/>
+  <link rel="stylesheet" href="/assets/css/main.css?v={% version %}"/>
+  <meta property="og:site_name" content="Name SRS blog">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }} | Name SRS">
+  <meta name="apple-mobile-web-app-title" content="Name SRS blog">
+  <meta name="application-name" content="Name SRS blog">
+  {% if summary %}
+    <meta name="description" content="{{ summary }}"/>
+    <meta property="og:description" content="{{ summary }}">
+  {% endif %}
+  <meta property="og:url" content="{{ page.url }}">
+</head>
+<body data-page="{{ name }}">
+  {% block body %}
+    <div id="page" class="py-6">
+      {% block content %}
+        <main class="page_width mx-auto content px-8 py-6">
+          {{ content | safe }}
+        </main>
+      {% endblock %}
+    </div>
+  {% endblock %}
+</body>
+</html>

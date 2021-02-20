@@ -1,0 +1,8 @@
+{% extends "main.njk" %}
+{% block content %}
+  <main class="page_width mx-auto content px-8 py-6">
+    <h2>{{ title }}</h2>
+    <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}">
+    <p>{{ content | safe }}</p>
+  </main>
+{% endblock %}
