@@ -8,24 +8,9 @@ body
   background-color: $bg-color;
 }
 
-svg
-{
-  fill: currentColor;
-}
-
-option
-{
-  font-weight: inherit;
-}
-
 .page_width
 {
   max-width: $limited-width;
-}
-
-.icon
-{
-  height: 1rem;
 }
 
 .link,
@@ -46,16 +31,26 @@ option
 
 main
 {
-  background-color: $content-bg;
-
   h1,
   h2
   {
     color: $menu-color;
   }
+
+  img
+  {
+    max-width: 100%;
+    max-height: 100vh;
+  }
 }
 
-.hide
+.content
 {
-  display: none;
+  background-color: $content-bg;
+}
+
+.category
+{
+  background-color: $category-bg;
+  color: $category-color;
 }

@@ -7,13 +7,21 @@ publish_mode: editorial_workflow
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "posts"
+    folder: "src/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "date", default: "" }
+      - { label: "Category", name: "category", widget: "relation", collection: "categories", search_fields: ["catname"], value_field: "catname", required: false }
+      - { label: "Show in CP8", name: "changelog", widget: "boolean", default: false }
       - { label: "Post Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+  - name: "categories"
+    label: "Categories"
+    folder: "src/categories"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "catname", widget: "string" }

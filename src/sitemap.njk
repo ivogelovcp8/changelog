@@ -6,11 +6,9 @@ layout: false
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {%- for item in collections.all -%}
-    {%- if not item.data.url -%}
     <url>
-      <loc>{{ nameISP.website }}{{ item | pageUrl }}</loc>
+      <loc>{{ nameISP.website }}{{ item.url }}</loc>
       <lastmod>{{ item.date.toISOString().substr(0, 10) }}</lastmod>
     </url>
-    {%- endif -%}
   {%- endfor -%}
 </urlset>
