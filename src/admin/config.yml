@@ -13,7 +13,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Date", name: "date", widget: "date", default: "" }
+      - { label: "Date", name: "date", widget: "date" }
       - { label: "Category", name: "category", widget: "relation", collection: "categories", search_fields: ["catname"], value_field: "catname", required: false }
       - { label: "Show in CP8", name: "changelog", widget: "boolean", default: false }
       - { label: "Post Body", name: "body", widget: "markdown" }
