@@ -1,0 +1,12 @@
+---
+permalink: /_headers
+---
+/*
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+  Access-Control-Allow-Headers: DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization,Accept,Origin
+# FYI: Always exposed headers: Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma
+  Access-Control-Expose-Headers: Content-Disposition, Content-Length, Content-Range
