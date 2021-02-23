@@ -1,3 +1,3 @@
 ---
-catname: Customer portal
+catname: Control Panel
 ---
